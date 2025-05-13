@@ -39,4 +39,10 @@ print(data.agg({
 }))
 
 print(data.groupby("Sex")["Age"].mean())
-print(data[["Sex", "Age"]].groupby("Sex").mean())
+x = print(data[["Sex", "Age"]].groupby("Sex").mean())
+
+y = print(data[["Sex", "Age"]].groupby("Sex").mean())
+
+
+
+print(data[["Sex", "Age", "Pclass"]].groupby("Sex").mean())
